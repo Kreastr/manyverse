@@ -115,6 +115,13 @@ You should also create the file `local.properties` in the `android` folder of th
 ndk.dir=/path/to/your/android/sdk/ndk/21.4.7075529
 ```
 
+Sometimes (if you see libsodium build errors during npm install later) this is not enough and you might need to export ANDROID_NDK_HOME environment variable manually
+
+```
+export ANDROID_NDK_HOME=/path/to/your/android/sdk/ndk/21.4.7075529
+```
+
+
 Add your debug keystore information to the `~/.gradle/gradle.properties` file.
 
 Also check out [nodejs-mobile docs](https://code.janeasystems.com/nodejs-mobile/getting-started-android#android-sdk-requirements) for the additional Android SDK requirements on your computer.
